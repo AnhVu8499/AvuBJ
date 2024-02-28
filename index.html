@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 id = "game-title">Blackjack Game</h1>
+    <div id = "suit-type">
+      <button id = "show-deck" onclick ="showDeck()">Whole deck is here</button>
+      <button id ="suit-but" onclick="showClubs()">Clubs suit</button>
+      <button id ="suit-but" onclick="showSpades()">Spades suit</button>
+      <button id ="suit-but" onclick="showDiamonds()">Diamonds suit</button>
+      <button id ="suit-but" onclick="showHearts()">Hearts suit</button>
+    </div>
+    <div id="game-container">
+      <div id="win-condition">You won the game</div>
+      <div id="dealer-card"></div>
+      <div id="dealer-hand">
+        <div id="dealer-subtype">
+          Dealer Cards
+        </div>
+      </div>
+      <div id="user-hand">
+        <div id="user-subtype">
+          Player Cards
+        </div>
+      </div>
+      <button id="hit-button" onclick="hitCard()">Hit</button>
+      <button id="stay-button" onclick="stayCard()">Stay</button>
+      <button id="start-button" onclick="startGame()">Start the game</button>
+      <button id="reset-button" onclick="reset()">Reset the game</button>
+    </div>
+    <div id="background-poker"></div>
+    <!--<button id = "test" onclick = "test()">Test value of cards</button> -->
+    <script src="deck.js"></script>
+  </body>
+</html>

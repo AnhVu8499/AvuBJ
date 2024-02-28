@@ -1,0 +1,138 @@
+body {
+  background-image: url("poker.jpg");
+  height:100%;
+  width:100%;
+  
+  position:absolute;
+  z-index:0;
+  background-size: 100vmax;
+}
+
+#menu {
+  height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.menu-item {
+  font-size:clamp(3rem, 8vw, 8rem);
+  font-family: "Ibara Real Nova", serif;
+  color:rgb(170, 32, 32);
+
+  display:block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
+}
+
+#menu-items {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
+
+#show-deck, #suit-but, #hit-button, #stay-button, #start-button, #reset-button {
+  z-index: 1;
+  font-size:30px;
+}
+
+#game-title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#suit-type {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 300px;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#user-hand, #dealer-hand {
+  width: 50%;
+  text-align: center;
+  padding: 50px;
+  position:absolute;
+}
+
+#user-hand {
+  display:flex;
+  align-items: center;
+  bottom: 120px;
+}
+
+#user-subtype, #dealer-subtype {
+  color:rgb(156, 61, 61);
+  font-weight: bold;
+  font-size:40px;
+}
+
+#dealer-hand {
+  right:30px;
+}
+
+#show-deck {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+}
+
+#card-type {
+  width:100px;
+  padding: 2px;
+  position:relative;
+}
+
+.card {
+  width: 70px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#win-condition {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(156, 61, 61);
+}
+
+#dealer-card {
+  right:500px;
+  position: absolute;
+  top: 350px;
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(156, 61, 61);
+}
+
+#test {
+  position: absolute;
+  bottom: 2%;
+  background:cyan;
+}
+
+#order {
+  margin:50%;
+}
