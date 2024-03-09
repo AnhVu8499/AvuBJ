@@ -1,11 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("poker.jpg");
-  height:100%;
-  width:100%;
-  
-  position:absolute;
+  height:100vh;
+  width:100vw%;
+  position:relative;
   z-index:0;
-  background-size: 100vmax;
+  background-size: cover;
 }
 
 #menu {
